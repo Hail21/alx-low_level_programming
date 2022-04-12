@@ -1,18 +1,21 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
+ * main - Function to pints the alphabet in lowercase, and then in uppercase.
  *
- * Description: Print lower ad upper case alphabet on the same line.
- * Return: 0
+ * Return: Always 0.
  */
+
 int main(void)
 {
-int c;
-for (c = 0; c < 26 : ++c);
-putchar ('a' + c);
-for (c = 0; c < 26 : ++c);
-putchar ('A' + c);
-putchar ('\n');
+char letter;
+for (letter = 'a'; letter <= 'z'; letter++)
+putchar(letter);
+for (letter = 'A'; letter <= 'Z'; letter++)
+putchar(letter);
+
+putchar('\n');
 
 return (0);
+
 }
